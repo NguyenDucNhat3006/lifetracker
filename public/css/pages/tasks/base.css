@@ -1,0 +1,156 @@
+﻿.task-page-card,
+.task-page-card .card-body {
+    overflow: visible;
+    /* cho phép nội dung bên trong card hiển thị trang ra ngoài
+    giúp dropdown hiển thị đầy đủ */
+}
+
+.task-table {
+    min-width: 860px;
+    table-layout: fixed;
+    /* các cột trong bảng dùng layout cố định */
+}
+
+.task-col-check {
+    width: 44px;
+}
+
+.task-col-tag {
+    width: 190px;
+}
+
+.task-col-deadline {
+    width: 150px;
+}
+
+.task-col-priority {
+    width: 170px;
+}
+
+.task-col-actions {
+    width: 110px;
+}
+
+#taskTableBody,
+#taskListArea {
+    transition: opacity 0.15s ease;
+}
+
+.task-row-item > td {
+    padding: 0.9rem 0.7rem;
+    vertical-align: middle;
+}
+
+.task-table .dropdown-menu,
+.task-card .dropdown-menu {
+    z-index: 1065;
+}
+
+.task-tag-pill {
+    max-width: 100%;
+    background-color: #dbeafe;
+    color: #0d6efd;
+    border-color: #93c5fd;
+}
+
+/* [id^="tag-text-" nghĩa là id bắt đầu bằng tag-text- */
+/* tên tag dài không làm vỡ layout */
+.task-tag-pill .task-tag-text,
+.task-tag-pill [id^="tag-text-"] {
+    max-width: 110px;
+}
+
+.task-priority-pill.task-priority-high {
+    background-color: #f8d7da;
+    color: #dc3545;
+    border-color: #f1aeb5;
+}
+
+.task-priority-pill.task-priority-med {
+    background-color: #fff3cd;
+    color: #b45309;
+    border-color: #ffda6a;
+}
+
+.task-priority-pill.task-priority-low {
+    background-color: #d1e7dd;
+    color: #198754;
+    border-color: #a3cfbb;
+}
+
+/* icon bên trong sẽ dùng cùng màu chữ với pill cha */
+.task-tag-pill i,
+.task-priority-pill i {
+    color: inherit;
+}
+
+/* rê chuột qua có hình bàn tay, để ra hiệu có thể click */
+.task-clickable-pill,
+.task-priority-pill {
+    cursor: pointer;
+}
+
+.task-tag-add-btn {
+    width: 28px;
+    height: 28px;
+}
+
+.task-tag-menu {
+    min-width: 220px;
+}
+
+/* min-width: 0 giúp item bên trong flex layout được phép co lại */
+.task-tag-option-row {
+    min-width: 0;
+}
+
+.task-tag-option-row .dropdown-item {
+    min-width: 0;
+}
+
+.task-tag-manage-btn {
+    width: 28px;
+    height: 28px;
+    min-width: 28px;
+}
+
+.task-tag-add-btn i,
+.task-tag-manage-btn i {
+    font-size: 0.72rem;
+}
+
+.task-deadline-input {
+    width: 135px;
+}
+
+.task-priority-menu {
+    min-width: 160px;
+}
+
+.task-priority-menu .task-priority-option:hover {
+    background-color: #f1f5f9;
+}
+
+.task-action-btn,
+.task-cell-actions .btn {
+    width: 34px;
+    height: 34px;
+}
+
+/* dùng cho card mobile, tránh text dài làm vỡ card */
+.task-card-field {
+    min-width: 0;
+}
+
+/* rộng tối đa 170px nhưng nếu container nhỏ hơn thì không tràn ra ngoài */
+.task-card .task-deadline-input {
+    width: min(170px, 100%);
+}
+
+#tagManageModal .modal-dialog {
+    width: min(440px, calc(100vw - 2rem)); /* rộng tối đa 440px, trên màn hình nhỏ không vượt quá view width - 2rem */
+    max-width: min(440px, calc(100vw - 2rem));
+    margin: 0 auto; /* căn ngang giữa */
+    transform: none;
+}
+

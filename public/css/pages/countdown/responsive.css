@@ -1,0 +1,145 @@
+﻿@media (min-width: 768px) and (max-width: 1199.98px) {
+    .countdown-card-body {
+        min-height: 224px;
+        padding: 1.25rem !important;
+    }
+
+    .countdown-title {
+        font-size: 1.05rem;
+    }
+
+    .time-box .num {
+        font-size: 1.22rem;
+    }
+
+    .time-box .label {
+        font-size: 0.58rem;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .countdown-add-trigger {
+        max-width: 100%;
+        white-space: nowrap;
+    }
+
+    .countdown-card:hover {
+        transform: none;
+    }
+
+    .countdown-card-body {
+        min-height: 0;
+        padding: 1rem !important;
+    }
+
+    .countdown-title {
+        font-size: 1rem !important;
+        line-height: 1.2 !important;
+        -webkit-line-clamp: 2;
+    }
+
+    .countdown-date {
+        font-size: 0.82rem !important;
+    }
+
+    .countdown-card-actions .btn {
+        width: 1.75rem;
+        height: 1.75rem;
+    }
+
+    .time-box {
+        padding: 0.58rem 0.3rem;
+        border-radius: 0.7rem;
+    }
+
+    .time-box .num {
+        font-size: clamp(1rem, 6.5vw, 1.35rem);
+    }
+
+    .time-box .label {
+        font-size: 0.62rem;
+        letter-spacing: 0.03em;
+    }
+
+    .message-box,
+    .countdown-message-slot {
+        min-height: 38px !important;
+        padding: 0.48rem 0.35rem !important;
+        font-size: 0.78rem !important;
+    }
+
+    .countdown-empty-state {
+        min-height: 280px;
+        padding-right: 1rem !important;
+        padding-left: 1rem !important;
+    }
+
+    .countdown-empty-icon {
+        font-size: 3.25rem;
+    }
+
+    #addCountdownModal,
+    #editCountdownModal {
+        padding-right: 0 !important;
+    }
+
+    #addCountdownModal .modal-dialog,
+    #editCountdownModal .modal-dialog {
+        width: calc(100vw - 1.5rem);
+        max-width: calc(100vw - 1.5rem);
+        margin: 0.75rem auto;
+    }
+
+    #addCountdownModal .modal-header,
+    #editCountdownModal .modal-header,
+    #addCountdownModal .modal-body,
+    #editCountdownModal .modal-body {
+        padding-right: 1rem !important;
+        padding-left: 1rem !important;
+    }
+
+    #addCountdownModal .modal-footer,
+    #editCountdownModal .modal-footer {
+        padding-right: 1rem !important;
+        padding-left: 1rem !important;
+    }
+}
+
+@media (max-width: 390px) {
+    .countdown-add-trigger {
+        padding: 0.55rem 0.75rem !important;
+        font-size: 0.82rem !important;
+    }
+
+    .countdown-card-body {
+        padding: 0.85rem !important;
+    }
+
+    .countdown-title {
+        font-size: 0.96rem !important;
+    }
+
+    .countdown-date {
+        font-size: 0.78rem !important;
+    }
+
+    .countdown-card-actions .btn {
+        width: 1.55rem;
+        height: 1.55rem;
+    }
+
+    .time-box {
+        padding: 0.5rem 0.22rem;
+    }
+
+    .time-box .num {
+        font-size: clamp(0.95rem, 6vw, 1.15rem);
+    }
+
+    .time-box .label {
+        font-size: 0.56rem;
+    }
+
+}
+
+

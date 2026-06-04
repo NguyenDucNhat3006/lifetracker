@@ -1,0 +1,89 @@
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .admin-users-table {
+        min-width: 630px;
+    }
+
+    .admin-col-id {
+        width: 52px;
+    }
+
+    .admin-col-user {
+        width: auto;
+    }
+
+    .admin-col-role,
+    .admin-col-status {
+        width: 116px;
+    }
+
+    .admin-col-login {
+        width: 112px;
+    }
+
+    .admin-col-actions {
+        width: 54px;
+    }
+
+    .admin-user-row > td {
+        padding: 0.75rem 0.45rem;
+    }
+
+    .admin-user-select {
+        padding-right: 1.55rem;
+        padding-left: 0.55rem;
+        font-size: 0.82rem;
+    }
+
+    .admin-delete-btn {
+        width: 34px;
+        height: 34px;
+    }
+
+    .admin-user-email,
+    .admin-login-date,
+    .admin-login-time {
+        font-size: 0.78rem;
+    }
+}
+
+@media (max-width: 767.98px) {
+    #adminUsersPage .card-body {
+        padding: 1rem !important;
+    }
+
+    #adminUsersTableArea {
+        overflow: visible;
+    }
+
+    .admin-user-select {
+        min-height: 42px;
+    }
+
+    .admin-delete-btn {
+        width: 40px;
+        height: 40px;
+    }
+
+    #addAdminModal .modal-dialog {
+        width: min(460px, calc(100vw - 1.25rem));
+        max-width: min(460px, calc(100vw - 1.25rem));
+    }
+
+    #addAdminModal .modal-header,
+    #addAdminModal .modal-body,
+    #addAdminModal .modal-footer {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+@media (max-width: 390px) {
+    #adminUsersPage .card-body {
+        padding: 0.85rem;
+    }
+
+    .admin-delete-btn {
+        width: 36px;
+        height: 36px;
+    }
+}

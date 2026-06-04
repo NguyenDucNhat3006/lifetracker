@@ -1,0 +1,27 @@
+.custom-pagination .page-link {
+    min-width: 30px;
+    height: 30px;
+    padding: 0 0.5rem;
+    font-weight: 700;
+    font-size: 0.95rem;
+    color: #475569;
+    background-color: #f1f5f9;
+    box-shadow: none;
+}
+
+.custom-pagination .pagination-ellipsis {
+    min-width: 28px;
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+}
+
+.custom-pagination .page-item.active .page-link {
+    box-shadow: 0 4px 6px -1px rgba(13, 110, 253, 0.3);
+}
+
+.custom-pagination .page-item.disabled .page-link {
+    color: #94a3b8 !important;
+    background-color: transparent !important;
+    cursor: not-allowed;
+    opacity: 1;
+}

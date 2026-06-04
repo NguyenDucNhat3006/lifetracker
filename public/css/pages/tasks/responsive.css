@@ -1,0 +1,21 @@
+/* tablet trở xuống */
+@media (max-width: 767.98px) {
+    #taskListArea {
+        overflow: visible; /* giúp dropdown hiển thị đẩy đủ */
+    }
+
+    .task-card .dropdown-menu {
+        max-width: calc(100vw - 2.5rem);
+        min-width: min(220px, calc(100vw - 2.5rem));
+        overflow-wrap: anywhere; /* cho phép xuống dòng ở bất cứ đâu nếu cần */
+    }
+}
+
+/* mobile nhỏ */
+@media (max-width: 390px) {
+    .task-action-btn,
+    .task-cell-actions .btn {
+        width: 32px;
+        height: 32px;
+    }
+}
